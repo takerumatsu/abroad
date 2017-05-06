@@ -1,3 +1,37 @@
+@charset "utf-8";
+
+.cover{
+  height: 900px;
+  width: 100%;
+  background: url("/images/continents.jpg") center center no-repeat;
+  /*background-color: skyblue;*/
+  /*padding-bottom: 0px;*/
+}
+
+.cover .cover-inner{
+}
+
+.cover .cover-inner .cover-contents{
+  text-align: center;
+  /*margin-bottom: 30px;*/
+}
+
+a{
+}
+
+.continents-button a{
+  padding: 20px;
+  margin: 0px 120px 30px 120px;
+  /*text-align: center;*/
+}
+
+p{
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+  border: 1px solid black;
+  padding: 150px;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
