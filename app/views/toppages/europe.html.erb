@@ -1,19 +1,39 @@
-<% content_for :cover do %>
-  <div class="cover">
-    <div class="cover-inner">
-      <div class="cover-contents">
-        <h1>Travelling Abroad</h1>
-        <a href="" class="btn btn-success btn-lg">ログイン</a>
-      </div>
-    </div>
+<h1 class="countries">ヨーロッパの観光名所</h1>
+<div class="country">
+  <h2>スペイン・ドイツ</h2>
+  <div class="contents">
+    <img src="<%= image_path 'spain.jpeg' %>" alt="spain" class="photo">
+    <p class="title">spain</p>
+    <button class="btn btn-primary">Like</button>
   </div>
-<% end %>
-
-<div class="continents-button">
-  <a href="" class="btn btn-danger">ヨーロッパ</a>
-  <a href="" class="btn btn-success">アジア・アフリカ</a>
-  <a href="" class="btn btn-primary">北米・南米</a>
+  <div class="contents">
+    <img src="<%= image_path 'germany.jpeg' %>" alt="germany" class="photo">
+    <p class="title">germany</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+  <div class="contents">
+    <img src="<%= image_path 'germany2.jpeg' %>" alt="germany2" class="photo">
+    <p class="title">germany2</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+</div>
+<div class="country">
+  <h2>イギリス・フランス・イタリア</h2>
+  <div class="contents">
+    <img src="<%= image_path 'england.jpeg' %>" alt="england" class="photo">
+    <p class="title">england</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+  <div class="contents">
+    <img src="<%= image_path 'france.jpeg' %>" alt="france" class="photo">
+    <p class="title">france</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+  <div class="contents">
+    <img src="<%= image_path 'italy.jpeg' %>" alt="italy" class="photo">
+    <p class="title">italy</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
 </div>
 
 
-<p>Google Map API を挿入</p>

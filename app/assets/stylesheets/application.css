@@ -1,14 +1,20 @@
 @charset "utf-8";
 
+/* footer */
+
+footer{
+  margin-bottom: 50px;
+}
+
+/* toppages */
+
 .cover{
   height: 900px;
   width: 100%;
   background: url("/images/continents.jpg") center center no-repeat;
-  /*background-color: skyblue;*/
+  
+  /*border: 1px solid black;*/
   /*padding-bottom: 0px;*/
-}
-
-.cover .cover-inner{
 }
 
 .cover .cover-inner .cover-contents{
@@ -16,34 +22,78 @@
   /*margin-bottom: 30px;*/
 }
 
-a{
-}
-
 .continents-button a{
-  padding: 20px;
+  padding: 30px 20px;
   margin: 0px 120px 30px 120px;
-  /*text-align: center;*/
 }
 
-p{
-  text-align: center;
-  margin: 100px 0px 100px 0px;
+.google-map{
+  padding: 200px;
+  margin: 100px 50px;
   border: 1px solid black;
-  padding: 150px;
+  text-align: center;
 }
 
+
+/* countries */
+
+.countries{
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.country{
+  text-align: left;
+  margin-bottom: 50px;
+  padding:50px;
+  border: 1px solid black;
+}
+
+
+
+/* contents */
+
+.contents{
+  width: 300px;
+  display: inline-block;
+  padding: 30px;
+  margin: 40px 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.photo{
+  height: 270px;
+  width: 230px;
+  object-fit: contain;
+}
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.photo{
+  height: 270px; 56.25% 
+  width: 230px;
+  border: 1px solid black;
+  -moz-background-size:contain;
+  background-size:contain;
+}
+*/
+.photo:hover{
+  transform: scale(2.0);
+  transition: 1.3s;
+  cursor: pointer;
+}
+/*
+.photo:hover{
+  transform: scale(3);
+}
+*/
+
+
+.title{
+  padding: 10px;
+  text-align: center;
+}
+
+.btn btn-default{
+  padding: 20px;
+}
+

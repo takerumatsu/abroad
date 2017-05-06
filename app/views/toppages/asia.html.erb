@@ -1,19 +1,37 @@
-<% content_for :cover do %>
-  <div class="cover">
-    <div class="cover-inner">
-      <div class="cover-contents">
-        <h1>Travelling Abroad</h1>
-        <a href="" class="btn btn-success btn-lg">ログイン</a>
-      </div>
-    </div>
+<h1 class="countries">アジア・アフリカの観光名所</h1>
+<div class="country">
+  <h2>インド・カンボジア</h2>
+  <div class="contents">
+    <img src="<%= image_path 'india.jpg' %>" alt="india" class="photo">
+    <p class="title">india</p>
+    <button class="btn btn-primary">Like</button>
   </div>
-<% end %>
-
-<div class="continents-button">
-  <a href="" class="btn btn-danger">ヨーロッパ</a>
-  <a href="" class="btn btn-success">アジア・アフリカ</a>
-  <a href="" class="btn btn-primary">北米・南米</a>
+  <div class="contents">
+    <img src="<%= image_path 'india2.jpg' %>" alt="india2" class="photo">
+    <p class="title">india2</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+  <div class="contents">
+    <img src="<%= image_path 'cambodia.jpg' %>" alt="cambodia" class="photo">
+    <p class="title">cambodia</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
 </div>
-
-
-<p>Google Map API を挿入</p>
+<div class="country">
+  <h2>エジプト</h2>
+  <div class="contents">
+    <img src="<%= image_path 'egypt.jpg' %>" alt="egypt" class="photo">
+    <p class="title">egypt</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+  <div class="contents">
+    <img src="<%= image_path 'egypt2.jpg' %>" alt="egypt2" class="photo">
+    <p class="title">egypt2</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+  <div class="contents">
+    <img src="<%= image_path 'egypt3.jpg' %>" alt="egypt3" class="photo">
+    <p class="title">egypt3</p>
+    <button class="btn btn-primary">Like</button>
+  </div>
+</div>
