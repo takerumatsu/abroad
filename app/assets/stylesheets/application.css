@@ -1,10 +1,32 @@
 @charset "utf-8";
 
+
+body{
+  font-family: 'Anton', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  /*background-color: skyblue;*/
+  padding-top: 70px;
+}
+
+.container{
+  /*background-color: skyblue;*/
+}
+
 /* footer */
 
 footer{
   margin-bottom: 50px;
 }
+
+/* btn */
+.btn{
+  font-family: "Nico Moji";
+}
+
+.continents-button{
+  padding: 0px 0px;
+}
+  
 
 /* toppages */
 
@@ -12,6 +34,9 @@ footer{
   height: 900px;
   width: 100%;
   background: url("/images/continents.jpg") center center no-repeat;
+  margin-top: 30px;
+  /*background-color: pink;*/
+  padding-bottom: 0px;
   
   /*border: 1px solid black;*/
   /*padding-bottom: 0px;*/
@@ -20,11 +45,13 @@ footer{
 .cover .cover-inner .cover-contents{
   text-align: center;
   /*margin-bottom: 30px;*/
+  font-size: 60px;
 }
 
+
 .continents-button a{
-  padding: 30px 20px;
-  margin: 0px 120px 30px 120px;
+  padding: 30px 40px;
+  margin: 0px 100px 30px 100px;
 }
 
 .google-map{
@@ -39,16 +66,22 @@ footer{
 
 .countries{
   text-align: center;
-  margin: 50px 0px;
+  margin: 50px 0px 50px 0px;
+  font-size: 50px;
 }
 
 .country{
   text-align: left;
   margin-bottom: 50px;
-  padding:50px;
-  border: 1px solid black;
+  padding: 20px 50px 0px 50px;
+  /*padding:50px;*/
+  /*border: 1px solid black;*/
+  /*font-family: 'Anton', sans-serif;*/
 }
 
+.country h2{
+  font-size: 40px;
+}
 
 
 /* contents */
@@ -59,13 +92,21 @@ footer{
   padding: 30px;
   margin: 40px 20px;
   border: 1px solid black;
+  /*border: 1px solid black;*/
+  border-radius: 20px;
+  border-width: 1px;
   text-align: center;
+}
+
+.contents p{
+  font-size: 20px;
 }
 
 .photo{
   height: 270px;
   width: 230px;
   object-fit: contain;
+  margin-bottom: 20px;
 }
 /*
 .photo{
@@ -77,8 +118,8 @@ footer{
 }
 */
 .photo:hover{
-  transform: scale(2.0);
-  transition: 1.3s;
+  transform: scale(1.1);
+  transition: 0.5s;
   cursor: pointer;
 }
 /*
@@ -97,3 +138,8 @@ footer{
   padding: 20px;
 }
 
+
+/* user-profile */
+.user-profile{
+  margin-top: 100px;
+}
