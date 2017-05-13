@@ -51,6 +51,6 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: abroad_production
-  username: abroad
-  password: <%= ENV['ABROAD_DATABASE_PASSWORD'] %>
+  database: takeru-abroad_production
+  username: takeru-abroad
+  password: <%= ENV['TAKERU-ABROAD_DATABASE_PASSWORD'] %>
