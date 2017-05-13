@@ -3,6 +3,12 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+    @likes = @user.likes
+    @count_like = @user.likes.count
+    
+    #追加
+    #@spot = current_user.like(params[:spot])
+    
   end
 
   def new

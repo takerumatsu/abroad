@@ -1,0 +1,11 @@
+<% if current_user.likes?(spot) %>
+  <%= form_for(current_user.likes.find_by(spot: spot), html: { method: :delete }) do |f| %>
+    <%= hidden_field_tag :spot, spot %>
+    <%= f.submit 'Unlike', class: 'btn btn-primary' %>
+  <% end %>
+<% else %>
+  <%= form_for(current_user.likes.build) do |f| %>
+    <%= hidden_field_tag :spot, spot %>
+    <%= f.submit 'Like', class: 'btn btn-primary' %>
+  <% end %>
+<% end %>

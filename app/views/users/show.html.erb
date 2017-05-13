@@ -5,4 +5,17 @@
   <div class="name text-center">
     <h1><%= @user.name %></h1>
   </div>
+  <div class="status text-center">
+    <div class="status-label">Like</div>
+    <div id="like_count" class="status-value">
+      <%= @count_like %>
+    </div>
+  </div>
+  
+  <!-- 追加 
+  <%# likes.each do |like| %>
+    <img src="<%#= @spot.image_url %>" alt="" >
+  <%# end %>
+  -->
+  
 </div>
