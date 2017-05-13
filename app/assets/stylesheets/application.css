@@ -15,6 +15,7 @@ body{
 /* footer */
 
 footer{
+
   margin-bottom: 50px;
 }
 
@@ -55,10 +56,11 @@ footer{
 }
 
 .google-map{
-  padding: 200px;
-  margin: 100px 50px;
-  border: 1px solid black;
+  padding: 0px;
+  margin: 100px 0px;
+  /*border: 1px solid black;*/
   text-align: center;
+
 }
 
 
