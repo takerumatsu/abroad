@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   resources :users, only: [:show, :new, :create]
   
-  resources :likes, only: [:create, :destory]
+  resources :likes, only: [:create, :destroy]
+  
+  get 'rankings/like', to: 'rankings#like'
   
 end

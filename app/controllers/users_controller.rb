@@ -8,6 +8,8 @@ class UsersController < ApplicationController
     
     #追加
     #@spot = current_user.like(params[:spot])
+    #@like = current_user.like(params[:id)
+    @like = []
     
   end
 

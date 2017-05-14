@@ -11,11 +11,34 @@
       <%= @count_like %>
     </div>
   </div>
+</div>  
+
   
-  <!-- 追加 
+<!-- 追加
+<%# if likes.present? %>
   <%# likes.each do |like| %>
-    <img src="<%#= @spot.image_url %>" alt="" >
+    <a class="popup" href="<%#= image_path 'spain.jpeg' %>"><img src="<%#= image_path 'spain.jpeg' %>" alt="spain" class="photo"></a>
+    <p class="title">Spain</p>
+    <%#= render 'likes/like_button', spot: "Spain" %>
   <%# end %>
-  -->
-  
+<%# end %>
+-->
+
+
+<!-- test 
+<div class="contents">
+  <a class="popup" href="<%#= image_path 'spain.jpeg' %>"><img src="<%= image_path 'spain.jpeg' %>" alt="spain" class="photo"></a>
+  <p class="title">Spain</p>
+  <%#= render 'likes/like_button', spot: "Spain" %>
 </div>
+<div class="contents">
+  <a class="popup" href="<%#= image_path 'germany.jpeg' %>"><img src="<%= image_path 'germany.jpeg' %>" alt="spain" class="photo"></a>
+  <p class="title">Germany</p>
+  <%#= render 'likes/like_button', spot: "Germany" %>
+</div>
+<div class="contents">
+  <a class="popup" href="<%#= image_path 'germany2.jpeg' %>"><img src="<%= image_path 'germany2.jpeg' %>" alt="germany2" class="photo"></a>
+  <p class="title">Germany2</p>
+  <%#= render 'likes/like_button', spot: "Germany2" %>
+</div>
+-->

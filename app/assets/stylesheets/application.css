@@ -5,6 +5,10 @@
 *= require_tree .
 */
 
+.alert{
+  font-family: none;
+}
+
 body{
   font-family: 'Anton', sans-serif;
   /*font-family: 'Open Sans', sans-serif;*/
@@ -22,6 +26,17 @@ footer{
 
   margin-bottom: 50px;
 }
+
+
+/* nav bar */
+.navbar-ranking{
+  color: red;
+}
+
+.glyphicon{
+  color: red;
+}
+
 
 /* btn */
 .btn{
@@ -64,7 +79,6 @@ footer{
   margin: 100px 0px;
   /*border: 1px solid black;*/
   text-align: center;
-
 }
 
 
@@ -155,7 +169,7 @@ footer{
 }
 
 .status{
-  margin: 50px 475px 250px 475px;
+  margin: 50px 475px 50px 475px;
   color: blue;
   /*border: 1px solid blacK;*/
   border-radius: 10px;
