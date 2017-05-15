@@ -46,6 +46,21 @@ footer{
 .continents-button{
   padding: 0px 0px;
 }
+
+.btn-info{
+  padding: 30px 90px;
+  margin: 0px 440px 50px 440px;
+}
+
+.btn-warning{
+  padding: 30px 90px;
+  margin: 0px 455px 70px 455px;
+}
+
+.btn-delete{
+  font-family: none;
+  padding: 0.5px 3px;
+}  
   
 
 /* toppages */
@@ -74,9 +89,11 @@ footer{
   margin: 0px 100px 30px 100px;
 }
 
+
+
 .google-map{
   padding: 0px;
-  margin: 100px 0px;
+  margin: 80px 0px;
   /*border: 1px solid black;*/
   text-align: center;
 }
@@ -148,32 +165,77 @@ footer{
 }
 */
 
-
+/*
 .title{
   padding: 10px;
   text-align: center;
 }
+*/
 
 .btn btn-default{
   padding: 20px;
 }
 
 
+/* user/show */
 /* user-profile */
 .user-profile{
   margin-top: 50px;
 }
 
 .name{
-  margin: 50px 0px;
+  margin: 30px 0px;
 }
 
 .status{
-  margin: 50px 475px 50px 475px;
+  margin: 20px 475px 20px 475px;
   color: blue;
   /*border: 1px solid blacK;*/
   border-radius: 10px;
   padding: 0px 20px;
   width: 200px;
-  
 }
+
+/* likes_photo */
+.row{
+  margin-bottom: 30px;
+}
+
+.likes-photo{
+  margin: 50px 25px;
+}
+
+.likes-photo p{
+  margin: 0px 80px 10px 80px;
+  font-size: 20px;
+}
+
+.likes-photo div{
+  margin: 0px 75px 10px 75px;
+  font-size: 20px;
+}
+
+
+
+/* micropost index */
+.media{
+  margin: 50px 50px;
+  padding-top: 10px;
+}
+
+.media-body{
+  font-size: 20px;
+}
+
+
+/* micropost new */
+.form-group{
+  margin: 50px 300px;
+  width: 500px;
+}
+
+.post-submit{
+  padding: 15px 30px;
+  margin-bottom: 200px;
+}
+

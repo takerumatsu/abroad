@@ -9,10 +9,16 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   
   get 'signup', to: 'users#new'
-  resources :users, only: [:show, :new, :create]
+  resources :users, only: [:show, :new, :create] do
+    member do
+      get :microposts
+    end
+  end
+
   
-  resources :likes, only: [:create, :destroy]
+  resources :likes, only: [:show, :create, :destroy]
   
   get 'rankings/like', to: 'rankings#like'
   
+  resources :microposts, only: [:index, :new, :create, :destroy]
 end

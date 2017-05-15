@@ -8,6 +8,8 @@ class User < ApplicationRecord
   
   has_many :likes
 #  has_many :like_spots, through: :likes, class_name: 'Spot', source: :spot
+
+  has_many :microposts
   
   
   def like(spot)

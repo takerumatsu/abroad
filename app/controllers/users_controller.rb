@@ -9,7 +9,9 @@ class UsersController < ApplicationController
     #追加
     #@spot = current_user.like(params[:spot])
     #@like = current_user.like(params[:id)
-    @like = []
+    
+    @microposts = @user.microposts.order('created_at DESC')
+    counts(@user)
     
   end
 
@@ -28,6 +30,8 @@ class UsersController < ApplicationController
       render :new
     end
   end
+  
+  
   
   
   private
