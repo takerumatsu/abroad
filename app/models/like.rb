@@ -4,8 +4,8 @@ class Like < ApplicationRecord
   validates :user_id, presence: true
   
 
-#ランキング  
-=begin  
+#ランキング
+=begin
   def like.ranking
     
   end

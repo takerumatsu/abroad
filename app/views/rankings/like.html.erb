@@ -1,1 +1,18 @@
 <h1>Like Ranking</h1>
+
+<% if @likes_ranking.present? %>
+  <div class="ranking">
+    <% @likes_ranking.each do |spot, like| %>
+      <div class="panel panel-default rank-panel pull-left">
+        <div class="panel-heading text-center">
+          <span class="ranking-spot"><%=  spot %></span>
+        </div>
+        <div class="panel-body text-center">
+          <span class="ranking-like"><%=  like %> likes</span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+

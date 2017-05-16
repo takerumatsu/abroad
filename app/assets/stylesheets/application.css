@@ -239,3 +239,16 @@ footer{
   margin-bottom: 200px;
 }
 
+/* ランキング like.html.erb */
+.ranking{
+  font-size: 20px;
+  margin: 50px 0px 100px 0px;
+}
+
+.rank-panel{
+  width: 200px;
+  margin: 0px 40px 50px 40px;
+}
+
+
+

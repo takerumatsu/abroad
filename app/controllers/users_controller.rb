@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :require_user_logged_in, only: [:show]
+  before_action :require_user_logged_in, only: [:show, :microposts]
   
   def show
     @user = User.find(params[:id])
@@ -31,6 +31,11 @@ class UsersController < ApplicationController
     end
   end
   
+  def microposts
+    @user = User.find(params[:id])
+    @microposts = @user.microposts
+    counts(@user)
+  end
   
   
   
