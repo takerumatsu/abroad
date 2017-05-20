@@ -12,6 +12,14 @@
         <div>
           <p><%= micropost.content %></p>
         </div>
+        
+        <!-- 写真追加 -->
+        <div>
+          <% if micropost.image %>
+            <span class="micropost-image"><%= image_tag micropost.image %></span>
+          <% end %>
+        </div>
+        
         <div>
           <% if current_user == micropost.user %>
             <%= link_to "Delete", micropost, method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-delete' %>
@@ -21,3 +29,15 @@
     </li>
   </ul>
 <% end %>
+
+
+
+
+<!-- 以下削除
+<%#= form_for(@micropost) do |f| %>
+  <div class="form-group">
+    <%#= f.text_area :content, class: 'form-control', rows: 3 %>
+  </div>
+  <%#= f.submit 'Post', class: 'btn btn-primary center-block post-submit' %>
+<%# end %>
+-->

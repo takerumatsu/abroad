@@ -58,3 +58,5 @@ gem 'gmaps4rails'
 group :production do
   gem 'pg'
 end
+
+gem "carrierwave"

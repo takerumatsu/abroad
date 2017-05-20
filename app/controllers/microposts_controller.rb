@@ -2,7 +2,8 @@ class MicropostsController < ApplicationController
   before_action :require_user_logged_in, only: [:new, :create, :destroy]
   before_action :correct_user, only: [:destroy]
   def index
-    @microposts = current_user.microposts.order('created_at DESC')
+    #@microposts = current_user.microposts.order('created_at DESC')
+    @microposts = Micropost.order('created_at DESC')
     @user = current_user
   end
 
@@ -34,7 +35,7 @@ class MicropostsController < ApplicationController
   private
 
   def micropost_params
-    params.require(:micropost).permit(:content)
+    params.require(:micropost).permit(:content, :image, :image_cache, :remove_image)
   end
   
   def correct_user

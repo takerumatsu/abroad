@@ -227,6 +227,12 @@ footer{
   font-size: 20px;
 }
 
+.micropost-image{
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
 
 /* micropost new */
 .form-group{
@@ -243,12 +249,19 @@ footer{
 .ranking{
   font-size: 20px;
   margin: 50px 0px 100px 0px;
+  overflow: hidden;
 }
 
 .rank-panel{
   width: 200px;
   margin: 0px 40px 50px 40px;
+  float: left;
 }
 
-
-
+/* 修正必要箇所 */
+.rank-photo{
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  /*margin-bottom: 20px;*/
+}

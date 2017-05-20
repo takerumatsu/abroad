@@ -3,13 +3,21 @@
 <% if @likes_ranking.present? %>
   <div class="ranking">
     <% @likes_ranking.each do |spot, like| %>
-      <div class="panel panel-default rank-panel pull-left">
+      <div class="panel panel-default rank-panel"><!-- pull-leftをclassから外した -->
         <div class="panel-heading text-center">
           <span class="ranking-spot"><%=  spot %></span>
         </div>
         <div class="panel-body text-center">
           <span class="ranking-like"><%=  like %> likes</span>
         </div>
+        
+        <div class="panel-footer rank-photo">
+          <!-- 以下、image_tagで写真追加 -->
+          <%= image_tag spot.downcase+".jpg" %>
+        </div>
+        <!-- renderでlikeボタンを追加 -->
+        <%= render 'likes/like_button', spot:spot %>
+
       </div>
     <% end %>
   </div>

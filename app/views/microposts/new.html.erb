@@ -1,6 +1,45 @@
+
 <%= form_for(@micropost) do |f| %>
-  <div class="form-group">
-    <%= f.text_area :content, class: 'form-control', rows: 3 %>
+  <% if @micropost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
+
+      <ul>
+      <% @micropost.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
   </div>
-  <%= f.submit 'Post', class: 'btn btn-primary center-block post-submit' %>
+
+  <!-- 追加箇所 開始 -->
+  <div class="field">
+    <% if @micropost.image? %>
+      <div class="thumbnail">
+        <%= image_tag @micropost.image.url %>
+      </div>
+    <% end %><br>
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+    <!--<%#= f.hidden_field :image_cache %>-->
+  </div>
+  <div class="field">
+    <!-- 既存レコード(DBに保存されている)かつ、画像が存在する場合 -->
+    <% if @micropost.persisted? && @micropost.image? %>
+      <label>
+        <%= f.check_box :remove_image %>
+        画像を削除
+      </label>
+    <% end %>
+  </div>
+  <!-- 追加箇所 終了 -->
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
