@@ -29,12 +29,39 @@ footer{
 
 
 /* nav bar */
+.nav{
+  font-family: none;
+}
+
 .navbar-ranking{
-  color: red;
+  font-family: none;
 }
 
 .glyphicon{
   color: red;
+}
+
+.glyphicon-top{
+  color: yellow;
+}
+
+.glyphicon-country{
+  color: skyblue;
+}
+
+/* video */
+/*
+.video{
+  height: 800px;
+  width: 100%;
+}
+*/
+
+.video-test{
+  position: fixed; right: 0; bottom: 0; /*配置決定に大事な箇所*/
+  /*min-width: 100%; min-height: 100%;*/
+  width: auto; height: auto; z-index: -100; /*z-indexで背面へ*/
+  background-size: cover;
 }
 
 
@@ -60,8 +87,8 @@ footer{
 .btn-delete{
   font-family: none;
   padding: 0.5px 3px;
-}  
-  
+} 
+
 
 /* toppages */
 
@@ -96,6 +123,31 @@ footer{
   margin: 80px 0px;
   /*border: 1px solid black;*/
   text-align: center;
+}
+
+.contact{
+  font-size: 30px;
+  margin: 50px 0px;
+}
+
+.contact2{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.fa{
+  color: #6e6666;
+  font-weight: bold;
+  border: medium solid #EE69B4;
+  border-radius: 50%;
+  background-color: #EE69B4;
+  padding:25px;
+}
+
+.fa:hover{
+  text-decoration: none;
+  background-color: #FF69B4;
+  border: medium solid #FF69B4;
 }
 
 
@@ -196,49 +248,92 @@ footer{
   width: 200px;
 }
 
+
 /* likes_photo */
 .row{
   margin-bottom: 30px;
 }
+
 
 .likes-photo{
   margin: 50px 25px;
 }
 
 .likes-photo p{
-  margin: 0px 80px 10px 80px;
   font-size: 20px;
+  text-align: center;
 }
 
 .likes-photo div{
-  margin: 0px 75px 10px 75px;
+  margin: 0px 0px 10px 0px;
   font-size: 20px;
+  text-align: center;
 }
 
 
 
 /* micropost index */
 .media{
+  font-size: 18px;
+}
+/*
+.media{
   margin: 50px 50px;
   padding-top: 10px;
 }
 
 .media-body{
-  font-size: 20px;
+  font-size: 15px;
 }
+*/
+
 
 .micropost-image{
+  height: 270px;
   width: 200px;
-  height: 100px;
   object-fit: contain;
+  margin: 5px 0px 20px 0px;
+  /*transform: rotateX( 180deg );*/
+  /*transform: rotate(90deg);*/
 }
+
+.micropost-image:hover{
+  transform: scale(1.05) /*rotate(90deg)*/;
+  transition: 0.5s;
+  cursor: pointer;
+  /*transform: rotateX( 180deg );*/
+}
+
+/*
+.image-btn{
+  margin: 0px 0px 0px 50px;
+}
+*/
 
 
 /* micropost new */
+
+.create-micropost{
+  font-size: 30px;
+  margin: 50px;
+}
+
+
+.file_field-image{
+  margin: 5px;
+  font-size: 15px;
+}
+
+.actions{
+  margin-top: 30px;
+}
+
+/*
 .form-group{
   margin: 50px 300px;
   width: 500px;
 }
+*/
 
 .post-submit{
   padding: 15px 30px;
@@ -247,10 +342,11 @@ footer{
 
 /* ランキング like.html.erb */
 .ranking{
-  font-size: 20px;
+  font-size: 18px;
   margin: 50px 0px 100px 0px;
   overflow: hidden;
 }
+
 
 .rank-panel{
   width: 200px;
@@ -258,10 +354,15 @@ footer{
   float: left;
 }
 
-/* 修正必要箇所 */
-.rank-photo{
-  height: 100px;
-  width: 100px;
-  object-fit: contain;
+
+.panel-heading{
+  padding: 0px;
+}
+
+.rank-photo img{
+  height: 270px;
+  width: 198px;
+  object-fit: cover;
   /*margin-bottom: 20px;*/
 }
+

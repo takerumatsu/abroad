@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
     
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    
     <!-- Magnific Popup -->
     <!--
     <link rel="stylesheet" href="magnific-popup.css">
@@ -38,12 +41,18 @@
   <body>
     <%= render 'layouts/navbar' %>
     <%= render 'layouts/flash_messages' %>
+    <!--
+    <%#= video_tag("sky.mp4", autoplay: true, loop: true, class: "video") %>
+    -->
     <%= yield :cover %>
+    
     
     <div class="container">
       
       <%= yield %>
     </div>
+    
+    <!--<%#= video_tag("sky.mp4", autoplay: true, loop: true, class: "video-test") %>-->
     
     <%= render 'layouts/footer' %>
     

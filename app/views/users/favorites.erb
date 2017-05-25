@@ -1,0 +1,37 @@
+<ul class="nav nav-tabs nav-justified">
+  <li class="<%= 'active' if current_page?(microposts_user_path(@user)) %>"><%= link_to microposts_user_path(@user) do %>My Post <!--Microposts--><span class="badge"><%= @count_microposts %></span><% end %></li>
+  <li class="<%= 'active' if current_page?(favorites_user_path(@user)) %>"><%= link_to favorites_user_path(@user) do %>Favorites <span class="badge"><%= @count_favorites %></span><% end %></li>
+  <li class="<%= 'active' if current_page?(user_path(@user)) %>"><%= link_to user_path(@user) do %>Likes <span class="badge"><%= @count_likes %></span><% end %></li>
+</ul>
+
+<div class="user-profile">
+  <div class="icon text-center">
+    <img src="<%= gravatar_url(@user, { size: 100 }) %>" alt="" class="img-circle">
+  </div>
+  <div class="name text-center">
+    <h1><%= @user.name %></h1>
+  </div>
+  <div class="status text-center">
+    <div class="status-label">Favorite</div>
+    <div id="favorites_count" class="status-value">
+      <%= @count_favorites %>
+    </div>
+  </div>
+</div>  
+
+
+
+
+<% if @favorites.present? %>
+  <div class="row">
+    <!-- ポイント!! @favorite_postsをcontrollerでdef / microposts:@favorite_posts -->
+    <%= render 'microposts/microposts', microposts:@favorite_posts %>
+    <!--<%#= render 'microposts/microposts', microposts: @microposts %>-->
+
+  </div>
+<% end %>
+
+
+
+
+

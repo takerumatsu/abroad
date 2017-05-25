@@ -1,39 +1,201 @@
 <h1 class="countries">Sightseeing Spots in Europe</h1>
+
 <div class="country">
-  <h2>Spain・Germany</h2>
+  <h2>Spain</h2>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'spain.jpeg' %>"><img src="<%= image_path 'spain.jpeg' %>" alt="spain" class="photo"></a>
-    <p class="title">Spain</p>
-    <%= render 'likes/like_button', spot: "Spain" %>
+    <a class="popup" href="<%= image_path 'sagrada familia.jpeg' %>"><img src="<%= image_path 'sagrada familia.jpeg' %>" alt="sagrada familia" class="photo"></a>
+    <p class="title">Sagrada Familia<br>in Barcelona</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Sagrada Familia" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'germany.jpeg' %>"><img src="<%= image_path 'germany.jpeg' %>" alt="spain" class="photo"></a>
-    <p class="title">Germany</p>
-    <%= render 'likes/like_button', spot: "Germany" %>
+    <a class="popup" href="<%= image_path 'sagrada familia<br>(christ).jpg' %>"><img src="<%= image_path 'sagrada familia<br>(christ).jpg' %>" alt="sagrada familia<br>(christ)" class="photo"></a>
+    <p class="title">Sagrada Familia<br>(Christ)</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Sagrada Familia<br>(Christ)" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'germany2.jpeg' %>"><img src="<%= image_path 'germany2.jpeg' %>" alt="germany2" class="photo"></a>
-    <p class="title">Germany2</p>
-    <%= render 'likes/like_button', spot: "Germany2" %>
-  </div>
-</div>
-<div class="country">
-  <h2>England・France・Italy</h2>
-  <div class="contents">
-    <a class="popup" href="<%= image_path 'england.jpeg' %>"><img src="<%= image_path 'england.jpeg' %>" alt="england" class="photo"></a>
-    <p class="title">England</p>
-    <%= render 'likes/like_button', spot: "England" %>
-  </div>
-  <div class="contents">
-    <a class="popup" href="<%= image_path 'france.jpeg' %>"><img src="<%= image_path 'france.jpeg' %>" alt="france" class="photo"></a>
-    <p class="title">France</p>
-    <%= render 'likes/like_button', spot: "France" %>
-  </div>
-  <div class="contents">
-    <a class="popup" href="<%= image_path 'italy.jpeg' %>"><img src="<%= image_path 'italy.jpeg' %>" alt="italy" class="photo"></a>
-    <p class="title">Italy</p>
-    <%= render 'likes/like_button', spot: "Italy" %>
+    <a class="popup" href="<%= image_path 'sagrada familia<br>(fachada de nacimiento).jpg' %>"><img src="<%= image_path 'sagrada familia<br>(fachada de nacimiento).jpg' %>" alt="sagrada familia<br>(fachada de nacimiento)" class="photo"></a>
+    <p class="title">Sagrada Familia<br>(Fachada de nacimiento)</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Sagrada Familia<br>(Fachada de nacimiento)" %>
+    <% end %>
   </div>
 </div>
 
+<div class="country">
+  <h2>Germany</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'neuschwanstein castle.jpeg' %>"><img src="<%= image_path 'neuschwanstein castle.jpeg' %>" alt="neuschwanstein castle" class="photo"></a>
+    <p class="title">Neuschwanstein Castle</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Neuschwanstein Castle" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'hohenschwangau castle.jpeg' %>"><img src="<%= image_path 'hohenschwangau castle.jpeg' %>" alt="hohenschwangau castle" class="photo"></a>
+    <p class="title">Hohenschwangau Castle</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Hohenschwangau Castle" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'cologne cathedral.jpg' %>"><img src="<%= image_path 'cologne cathedral.jpg' %>" alt="cologne cathedral" class="photo"></a>
+    <p class="title">Cologne Cathedral</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Cologne Cathedral" %>
+    <% end %>
+  </div>
+  
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'old castle.jpg' %>"><img src="<%= image_path 'old castle.jpg' %>" alt="old castle" class="photo"></a>
+    <p class="title">Old Castle</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Old Castle" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'view from old castle.jpg' %>"><img src="<%= image_path 'view from old castle.jpg' %>" alt="view from old castle" class="photo"></a>
+    <p class="title">View from Old Castle</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "View from Old Castle" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'frankfurt.jpg' %>"><img src="<%= image_path 'frankfurt.jpg' %>" alt="frankfurt" class="photo"></a>
+    <p class="title">Frankfurt</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Frankfurt" %>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="country">
+  <h2>England</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'big ben.jpeg' %>"><img src="<%= image_path 'big ben.jpeg' %>" alt="big ben" class="photo"></a>
+    <p class="title">Big Ben</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Big Ben" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'trafalgar square.jpg' %>"><img src="<%= image_path 'trafalgar square.jpg' %>" alt="trafalgar square" class="photo"></a>
+    <p class="title">Trafalgar Square</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Trafalgar Square" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'piccadilly circus.jpg' %>"><img src="<%= image_path 'piccadilly circus.jpg' %>" alt="piccadilly circus" class="photo"></a>
+    <p class="title">Piccadilly Circus</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Piccadilly Circus" %>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="country">
+  <h2>France</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'arc de triomphe.jpeg' %>"><img src="<%= image_path 'arc de triomphe.jpeg' %>" alt="arc de triomphe" class="photo"></a>
+    <p class="title">Arc de Triomphe</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Arc de Triomphe" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'la tour eiffel.jpg' %>"><img src="<%= image_path 'la tour eiffel.jpg' %>" alt="la tour eiffel" class="photo"></a>
+    <p class="title">La tour Eiffel</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "La tour Eiffel" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'musée du louvre.jpg' %>"><img src="<%= image_path 'musée du louvre.jpg' %>" alt="musée du louvre" class="photo"></a>
+    <p class="title">Musée du Louvre</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Musée du Louvre" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="country">
+  <h2>Italy</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'ponte di rialto.jpeg' %>"><img src="<%= image_path 'ponte di rialto.jpeg' %>" alt="ponte di rialto" class="photo"></a>
+    <p class="title">Ponte di Rialto</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Ponte di Rialto" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'san giorgio maggiore.jpg' %>"><img src="<%= image_path 'san giorgio maggiore.jpg' %>" alt="san giorgio maggiore" class="photo"></a>
+    <p class="title">San Giorgio Maggiore</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "San Giorgio Maggiore" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'basilica di san marco.jpg' %>"><img src="<%= image_path 'basilica di san marco.jpg' %>" alt="basilica di san marco" class="photo"></a>
+    <p class="title">Basilica di San Marco</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Basilica di San Marco" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="country">
+  <h2>Netherland and Belgium</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'amsterdam.jpg' %>"><img src="<%= image_path 'amsterdam.jpg' %>" alt="amsterdam" class="photo"></a>
+    <p class="title">Amsterdam</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Amsterdam" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'k-1 arts dojo.jpg' %>"><img src="<%= image_path 'k-1 arts dojo.jpg' %>" alt="k-1 arts dojo" class="photo"></a>
+    <p class="title">K-1 Arts Dojo</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "K-1 Arts Dojo" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'manneken pis.jpg' %>"><img src="<%= image_path 'manneken pis.jpg' %>" alt="manneken pis" class="photo"></a>
+    <p class="title">Manneken Pis</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Manneken Pis" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="country">
+  <h2>Czech Hungary Denmark</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'czech.jpg' %>"><img src="<%= image_path 'czech.jpg' %>" alt="czech" class="photo"></a>
+    <p class="title">Czech</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Czech" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'hungary.jpg' %>"><img src="<%= image_path 'hungary.jpg' %>" alt="hungary" class="photo"></a>
+    <p class="title">Hungary</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "hungary" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'denmark.jpg' %>"><img src="<%= image_path 'denmark.jpg' %>" alt="denmark" class="photo"></a>
+    <p class="title">Denmark</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "denmark" %>
+    <% end %>
+  </div>
+</div>
 

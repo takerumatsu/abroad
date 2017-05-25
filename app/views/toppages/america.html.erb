@@ -1,37 +1,139 @@
 <h1 class="countries">Sightseeing Spots in America</h1>
+
+<div class="country">
+  <h2>United States</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'santa monica.jpg' %>"><img src="<%= image_path 'santa monica.jpg' %>" alt="santa monica" class="photo"></a>
+    <p class="title">Santa Monica</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Santa Monica" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'mickey mouse.jpg' %>"><img src="<%= image_path 'mickey mouse.jpg' %>" alt="mickey mouse" class="photo"></a>
+    <p class="title">Mickey Mouse</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Mickey Mouse" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'marilyn monroe.jpg' %>"><img src="<%= image_path 'marilyn monroe.jpg' %>" alt="marilyn monroe" class="photo"></a>
+    <p class="title">Marilyn Monroe</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Marilyn Monroe" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'toy story.jpg' %>"><img src="<%= image_path 'toy story.jpg' %>" alt="toy story" class="photo"></a>
+    <p class="title">Toy Story</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Toy Story" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'star wars.jpg' %>"><img src="<%= image_path 'star wars.jpg' %>" alt="star wars" class="photo"></a>
+    <p class="title">Star wars</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Star wars" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'pacific ocean.jpg' %>"><img src="<%= image_path 'pacific ocean.jpg' %>" alt="pacific ocean" class="photo"></a>
+    <p class="title">Pacific Ocean</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Pacific Ocean" %>
+    <% end %>
+  </div>
+</div>
+
 <div class="country">
   <h2>Peru</h2>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'peru.jpg' %>"><img src="<%= image_path 'peru.jpg' %>" alt="peru" class="photo"></a>
+    <a class="popup" href="<%= image_path 'machu picchu.jpg' %>"><img src="<%= image_path 'machu picchu.jpg' %>" alt="machu picchu" class="photo"></a>
     <p class="title">Machu Picchu</p>
-    <%= render 'likes/like_button', spot: "Machu Picchu" %>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Machu Picchu" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'peru2.jpg' %>"><img src="<%= image_path 'peru2.jpg' %>" alt="peru2" class="photo"></a>
-    <p class="title">Peru2</p>
-    <%= render 'likes/like_button', spot: "Peru2" %>
+    <a class="popup" href="<%= image_path 'machu picchu bright.jpg' %>"><img src="<%= image_path 'machu picchu bright.jpg' %>" alt="machu picchu bright" class="photo"></a>
+    <p class="title">Machu Picchu bright</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Machu Picchu bright" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'peru3.jpg' %>"><img src="<%= image_path 'peru3.jpg' %>" alt="peru3" class="photo"></a>
-    <p class="title">Peru3</p>
-    <%= render 'likes/like_button', spot: "Peru3" %>
+    <a class="popup" href="<%= image_path 'machu picchu gate.jpg' %>"><img src="<%= image_path 'machu picchu gate.jpg' %>" alt="machu picchu gate" class="photo"></a>
+    <p class="title">Machu Picchu gate</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Machu Picchu gate" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'lima ocean.jpg' %>"><img src="<%= image_path 'lima ocean.jpg' %>" alt="lima ocean" class="photo"></a>
+    <p class="title">Lima Ocean</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Lima Ocean" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'lima ocean at night.jpg' %>"><img src="<%= image_path 'lima ocean at night.jpg' %>" alt="lima ocean at night" class="photo"></a>
+    <p class="title">Lima Ocean at night</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Lima Ocean at night" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'lima sunset.jpg' %>"><img src="<%= image_path 'lima sunset.jpg' %>" alt="lima sunset" class="photo"></a>
+    <p class="title">Lima sunset</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Lima sunset" %>
+    <% end %>
   </div>
 </div>
+
 <div class="country">
   <h2>Bolivia</h2>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'uyuni.jpg' %>"><img src="<%= image_path 'uyuni.jpg' %>" alt="uyuni" class="photo"></a>
-    <p class="title">Uyuni1</p>
-    <%= render 'likes/like_button', spot: "Uyuni1" %>
+    <a class="popup" href="<%= image_path 'uyuni salty lake.jpg' %>"><img src="<%= image_path 'uyuni salty lake.jpg' %>" alt="uyuni salty lake" class="photo"></a>
+    <p class="title">Uyuni Salty Lake</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Uyuni Salty Lake" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'uyuni2.jpg' %>"><img src="<%= image_path 'uyuni2.jpg' %>" alt="uyuni2" class="photo"></a>
-    <p class="title">Uyuni2</p>
-    <%= render 'likes/like_button', spot: "Uyuni2" %>
+    <a class="popup" href="<%= image_path 'uyuni sunset.jpg' %>"><img src="<%= image_path 'uyuni sunset.jpg' %>" alt="uyuni sunset" class="photo"></a>
+    <p class="title">Uyuni sunset</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Uyuni sunset" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'uyuni3.jpg' %>"><img src="<%= image_path 'uyuni3.jpg' %>" alt="uyuni3" class="photo"></a>
-    <p class="title">Uyuni3</p>
-    <%= render 'likes/like_button', spot: "Uyuni3" %>
+    <a class="popup" href="<%= image_path 'windmill.jpg' %>"><img src="<%= image_path 'windmill.jpg' %>" alt="windmill" class="photo"></a>
+    <p class="title">Windmill</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Windmill" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'trick art.jpg' %>"><img src="<%= image_path 'trick art.jpg' %>" alt="trick art" class="photo"></a>
+    <p class="title">Trick Art</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Trick Art" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'incahuasi.jpg' %>"><img src="<%= image_path 'incahuasi.jpg' %>" alt="incahuasi" class="photo"></a>
+    <p class="title">Incahuasi</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Incahuasi" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'valle de la luna.jpg' %>"><img src="<%= image_path 'valle de la luna.jpg' %>" alt="valle de la luna" class="photo"></a>
+    <p class="title">Valle de la Luna</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Valle de la Luna" %>
+    <% end %>
   </div>
 </div>

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :new, :create] do
     member do
       get :microposts
+      get :favorites
     end
   end
 
@@ -19,6 +20,9 @@ Rails.application.routes.draw do
   resources :likes, only: [:show, :create, :destroy]
   
   get 'rankings/like', to: 'rankings#like'
+  get 'rankings/favorite', to: 'rankings#favorite'
   
   resources :microposts, only: [:index, :new, :create, :destroy]
+  
+  resources :favorites, only: [:create, :destroy]
 end

@@ -1,4 +1,7 @@
 <% content_for :cover do %>
+
+<%= video_tag("sky.mp4", autoplay: true, loop: true, class: "video-test") %>
+
   <div class="cover">
     <div class="cover-inner">
       <div class="cover-contents">
@@ -11,6 +14,7 @@
   </div>
 <% end %>
 
+
 <div class="continents-button">
   <a href="toppages/europe" class="btn btn-danger">ヨ ー ロ ッ パ</a>
   <a href="toppages/asia" class="btn btn-success">アジア・アフリカ</a>
@@ -18,9 +22,8 @@
 </div>
 
 
-
 <p class="google-map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d58137346.58086236!2d31.598113073829115!3d27.205896572895163!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1494656554373" width="1100" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50328105.561220646!2d157.62500865454717!3d39.65458025149409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1495283586889" width="1000" height="540" frameborder="0" style="border:0" allowfullscreen></iframe>
 </p>
 
 <div class="photos-of-everyone-button">
@@ -30,6 +33,30 @@
 <div class="your-photos-button">
   <a href="microposts/new" class="btn btn-warning">Post</a>
 </div>
+
+<!-- contact
+<ul class="list-unstyled text-center">
+  <li class="contact">
+    <%#= mail_to 'test@gmail.com', ' Contact', subject: 'traveling abroad', class: 'fa fa-envelope-o' %>
+  </li>
+</u>
+-->
+
+
+<section>
+  <h2 class="text-center">Contact</h2>
+  <ul class="list-unstyled text-center contact2">
+    <li>
+      <a href="mailto:test@gmail.com"><i aria-label="メール" class="fa fa-envelope-o"></i></a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- 動画埋め込みテスト
+<#%= video_tag("sky.mp4", autoplay: true, loop: true) %>
+-->
+
 
 <!--
 <div style='width: 800px;'>

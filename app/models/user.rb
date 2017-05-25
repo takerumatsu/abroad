@@ -25,4 +25,22 @@ class User < ApplicationRecord
     self.likes.pluck(:spot).include?(spot)
   end
   
+
+  has_many :favorites, foreign_key: 'user_id'
+  has_many :favorite_posts, through: :favorites, source: :micropost
+  
+  def favorite(micropost)
+    self.favorites.find_or_create_by(micropost_id: micropost.id)
+  end
+  
+  def unfavorite(micropost)
+    fav = self.favorites.find_by(micropost_id: micropost.id)
+    fav.destroy if fav
+  end
+
+  def favorites?(micropost)
+    self.favorite_posts.include?(micropost)
+  end
+  
+  
 end

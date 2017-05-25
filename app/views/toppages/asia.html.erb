@@ -1,37 +1,210 @@
 <h1 class="countries">Sightseeing Spots in Asia & Africa</h1>
+
 <div class="country">
-  <h2>India・Cambodia</h2>
+  <h2>India</h2>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'india.jpg' %>"><img src="<%= image_path 'india.jpg' %>" alt="india" class="photo"></a>
-    <p class="title">India</p>
-    <%= render 'likes/like_button', spot: "India" %>
+    <a class="popup" href="<%= image_path 'taj mahal.jpg' %>"><img src="<%= image_path 'taj mahal.jpg' %>" alt="taj mahal" class="photo"></a>
+    <p class="title">Taj Mahal</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Taj Mahal" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'india2.jpg' %>"><img src="<%= image_path 'india2.jpg' %>" alt="india2" class="photo"></a>
-    <p class="title">India2</p>
-    <%= render 'likes/like_button', spot: "India2" %>
+    <a class="popup" href="<%= image_path 'wagga border.jpg' %>"><img src="<%= image_path 'wagga border.jpg' %>" alt="wagga border" class="photo"></a>
+    <p class="title">Wagga border</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Wagga border" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'cambodia.jpg' %>"><img src="<%= image_path 'cambodia.jpg' %>" alt="cambodia" class="photo"></a>
-    <p class="title">Cambodia</p>
-    <%= render 'likes/like_button', spot: "Cambodia" %>
+    <a class="popup" href="<%= image_path 'new delhi.jpg' %>"><img src="<%= image_path 'new delhi.jpg' %>" alt="new delhi" class="photo"></a>
+    <p class="title">New Delhi</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "New Delhi" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'golden temple at noon.jpg' %>"><img src="<%= image_path 'golden temple at noon.jpg' %>" alt="golden temple at noon" class="photo"></a>
+    <p class="title">Golden Temple at noon</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Golden Temple at noon" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'golden temple at night.jpg' %>"><img src="<%= image_path 'golden temple at night.jpg' %>" alt="golden temple at night" class="photo"></a>
+    <p class="title">Golden Temple at night</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "golden temple at night" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'golden temple with local.jpg' %>"><img src="<%= image_path 'golden temple with local.jpg' %>" alt="golden temple with local" class="photo"></a>
+    <p class="title">Golden Temple with local</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Golden Temple with local" %>
+    <% end %>
   </div>
 </div>
+
+<div class="country">
+  <h2>Vietnam</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'ho chi minh.jpg' %>"><img src="<%= image_path 'ho chi minh.jpg' %>" alt="ho chi minh" class="photo"></a>
+    <p class="title">Ho Chi Minh</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Ho Chi Minh" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'ho chi minh at night.jpg' %>"><img src="<%= image_path 'ho chi minh at night.jpg' %>" alt="ho chi minh at night" class="photo"></a>
+    <p class="title">Ho Chi Minh at night</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Ho Chi Minh at night" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'street view from ho chi minh.jpg' %>"><img src="<%= image_path 'street view from ho chi minh.jpg' %>" alt="street view from ho chi minh" class="photo"></a>
+    <p class="title">Street view from Ho Chi Minh</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Street view from Ho Chi Minh" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="country">
+  <h2>Cambodia</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'angkor wat.jpg' %>"><img src="<%= image_path 'angkor wat.jpg' %>" alt="angkor wat" class="photo"></a>
+    <p class="title">Angkor Wat</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Angkor Wat" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'angkor wat sunrise.jpg' %>"><img src="<%= image_path 'angkor wat sunrise.jpg' %>" alt="angkor wat sunrise" class="photo"></a>
+    <p class="title">Angkor Wat sunrise</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Angkor Wat sunrise" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'angkor thom.jpg' %>"><img src="<%= image_path 'angkor thom.jpg' %>" alt="angkor thom" class="photo"></a>
+    <p class="title">Angkor Thom</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "angkor thom" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'mural painting.jpg' %>"><img src="<%= image_path 'mural painting.jpg' %>" alt="'mural painting" class="photo"></a>
+    <p class="title">Mural Painting</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Mural Painting" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'ta prohm.jpg' %>"><img src="<%= image_path 'ta prohm.jpg' %>" alt="ta prohm" class="photo"></a>
+    <p class="title">Ta Prohm </p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Ta Prohm" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'ta prohm entrance.jpg' %>"><img src="<%= image_path 'ta prohm entrance.jpg' %>" alt="ta prohm entrance" class="photo"></a>
+    <p class="title">Ta Prohm entrance</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Ta Prohm entrance" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="country">
+  <h2>Thailand</h2>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'wat pho.jpg' %>"><img src="<%= image_path 'wat pho.jpg' %>" alt="thai" class="photo"></a>
+    <p class="title">Wat Pho</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Wat Pho" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'rajadamnern stadium.jpg' %>"><img src="<%= image_path 'rajadamnern stadium.jpg' %>" alt="rajadamnern stadium" class="photo"></a>
+    <p class="title">Rajadamnern Stadium</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Rajadamnern Stadium" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'muay thai.jpg' %>"><img src="<%= image_path 'muay thai.jpg' %>" alt="muay thai" class="photo"></a>
+    <p class="title">Muay Thai</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Muay Thai" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'pattaya.jpg' %>"><img src="<%= image_path 'pattaya.jpg' %>" alt="pattaya" class="photo"></a>
+    <p class="title">Pattaya</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Pattaya" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'pattaya park.jpg' %>"><img src="<%= image_path 'pattaya park.jpg' %>" alt="pattaya park" class="photo"></a>
+    <p class="title">Pattaya Park</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Pattaya Park" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'thai food.jpg' %>"><img src="<%= image_path 'thai food.jpg' %>" alt="thai food" class="photo"></a>
+    <p class="title">Thai food</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Thai food" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'soi cowboy.jpg' %>"><img src="<%= image_path 'soi cowboy.jpg' %>" alt="soi cowboy" class="photo"></a>
+    <p class="title">Soi Cowboy</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Soi Cowboy" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'muay thai show.jpg' %>"><img src="<%= image_path 'muay thai show.jpg' %>" alt="muay thai show" class="photo"></a>
+    <p class="title">Muay Thai Show</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Muay Thai Show" %>
+    <% end %>
+  </div>
+  <div class="contents">
+    <a class="popup" href="<%= image_path 'night club.jpg' %>"><img src="<%= image_path 'night club.jpg' %>" alt="night club" class="photo"></a>
+    <p class="title">Night Club</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Night Club" %>
+    <% end %>
+  </div>
+</div>
+
 <div class="country">
   <h2>Egypt</h2>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'egypt.jpg' %>"><img src="<%= image_path 'egypt.jpg' %>" alt="egypt" class="photo"></a>
-    <p class="title">Egypt</p>
-    <%= render 'likes/like_button', spot: "Egypt" %>
+    <a class="popup" href="<%= image_path 'pyramid.jpg' %>"><img src="<%= image_path 'pyramid.jpg' %>" alt="pyramid" class="photo"></a>
+    <p class="title">Pyramid</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Pyramid" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'egypt2.jpg' %>"><img src="<%= image_path 'egypt2.jpg' %>" alt="egypt2" class="photo"></a>
-    <p class="title">Egypt2</p>
-    <%= render 'likes/like_button', spot: "Egypt2" %>
+    <a class="popup" href="<%= image_path 'pyramid & sphinx.jpg' %>"><img src="<%= image_path 'pyramid & sphinx.jpg' %>" alt="pyramid & sphinx" class="photo"></a>
+    <p class="title">Pyramid & Sphinx</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Pyramid & Sphinx" %>
+    <% end %>
   </div>
   <div class="contents">
-    <a class="popup" href="<%= image_path 'egypt3.jpg' %>"><img src="<%= image_path 'egypt3.jpg' %>" alt="egypt3" class="photo"></a>
-    <p class="title">Egypt3</p>
-    <%= render 'likes/like_button', spot: "Egypt3" %>
+    <a class="popup" href="<%= image_path 'sphinx.jpg' %>"><img src="<%= image_path 'sphinx.jpg' %>" alt="sphinx" class="photo"></a>
+    <p class="title">Sphinx</p>
+    <% if logged_in? %>
+      <%= render 'likes/like_button', spot: "Sphinx" %>
+    <% end %>
   </div>
 </div>

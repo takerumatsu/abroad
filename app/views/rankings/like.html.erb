@@ -1,26 +1,40 @@
 <h1>Like Ranking</h1>
 
+
 <% if @likes_ranking.present? %>
+  
   <div class="ranking">
     <% @likes_ranking.each do |spot, like| %>
       <div class="panel panel-default rank-panel"><!-- pull-leftをclassから外した -->
-        <div class="panel-heading text-center">
-          <span class="ranking-spot"><%=  spot %></span>
-        </div>
-        <div class="panel-body text-center">
-          <span class="ranking-like"><%=  like %> likes</span>
+      
+        <div class="panel-heading rank-photo">
+          
+          <!-- 「検証」で確認し、"/images/"を追加 -->
+          <a class="popup" href="<%= "/images/"+spot.downcase+".jpg" %>"><%= image_tag(spot.downcase+".jpg") %></a>
+          
+          <!--
+          <a class="popup" href="<%#= spot.downcase+".jpg" %>"><%#= image_tag(spot.downcase+".jpg") %></a>
+          -->
+          
+          <!-- 以下、image_tagで写真追加 -->
+          <!--
+          <%#= image_tag spot.downcase+".jpg" %>
+          -->
         </div>
         
-        <div class="panel-footer rank-photo">
-          <!-- 以下、image_tagで写真追加 -->
-          <%= image_tag spot.downcase+".jpg" %>
+        <div class="panel-body text-center">
+          <span class="ranking-spot"><%=  spot %></span>
         </div>
-        <!-- renderでlikeボタンを追加 -->
-        <%= render 'likes/like_button', spot:spot %>
-
+        
+        <div class="panel-footer text-center">
+          <span class="ranking-like"><%=  like %> likes</span>
+          <!-- renderでlikeボタンを追加 -->
+          <%= render 'likes/like_button', spot:spot %>
+        </div>
       </div>
     <% end %>
   </div>
 <% end %>
+
 
 

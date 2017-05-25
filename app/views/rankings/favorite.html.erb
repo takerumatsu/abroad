@@ -1,0 +1,33 @@
+<h1>Favorite Ranking</h1>
+
+<% if @favorites_ranking.present? %>
+  <div class="ranking">
+    <% @favorites_ranking.each do |micropost, favorite| %>
+      <!-- micropost_id しか取り出せていないので、realmicropostを定義し、id以外も取り出す -->
+      <% realmicropost = Micropost.find(micropost) %>
+      
+      <div class="panel panel-default rank-panel">
+        
+        <div class="panel-heading rank-photo">
+          <a class="popup" href="<%= realmicropost.image %>"><%= image_tag(realmicropost.image) %></a>
+          <!-- realmicropostでimageを取り出す -->
+          <!--
+          <%#= image_tag realmicropost.image %>
+          -->
+        </div>
+        
+        <div class="panel-body text-center">
+          <span class="ranking-micropost"><%= realmicropost.content %></span>
+        </div>
+        
+        <div class="panel-footer text-center">
+          <span class="ranking-favorite"><%= favorite %> favorites</span>
+          <%= render 'favorites/favorites', micropost:realmicropost %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+

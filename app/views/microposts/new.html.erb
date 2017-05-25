@@ -1,45 +1,69 @@
-
-<%= form_for(@micropost) do |f| %>
-  <% if @micropost.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
-
-      <ul>
-      <% @micropost.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_field :content %>
-  </div>
-
-  <!-- 追加箇所 開始 -->
-  <div class="field">
-    <% if @micropost.image? %>
-      <div class="thumbnail">
-        <%= image_tag @micropost.image.url %>
-      </div>
-    <% end %><br>
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
-    <!--<%#= f.hidden_field :image_cache %>-->
-  </div>
-  <div class="field">
-    <!-- 既存レコード(DBに保存されている)かつ、画像が存在する場合 -->
-    <% if @micropost.persisted? && @micropost.image? %>
-      <label>
-        <%= f.check_box :remove_image %>
-        画像を削除
-      </label>
-    <% end %>
-  </div>
-  <!-- 追加箇所 終了 -->
+<div class="create-micropost">
+  <%= form_for(@micropost) do |f| %>
+    <% if @micropost.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
   
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+        <ul>
+        <% @micropost.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="field field-content">
+      <%= f.label :content %><br>
+      <%= f.text_field :content %>
+    </div>
+  
+    <!-- 追加箇所 開始 -->
+    <div class="field field-image">
+      <% if @micropost.image? %>
+        <div class="thumbnail">
+          <%= image_tag @micropost.image.url %>
+        </div>
+      <% end %><br>
+      <%= f.label :image %><br>
+      <span class="file_field-image"><%= f.file_field :image %></span>
+      <%= f.hidden_field :image_cache %>
+    </div>
+    <div class="field">
+      <!-- 既存レコード(DBに保存されている)かつ、画像が存在する場合 -->
+      <% if @micropost.persisted? && @micropost.image? %>
+        <label>
+          <%= f.check_box :remove_image %>
+          画像を削除
+        </label>
+      <% end %>
+    </div>
+    <!-- 追加箇所 終了 -->
+    
+    <div class="actions">
+      <%= f.submit "POST" %>
+    </div>
+    
+    <!-- link_to のテスト
+    <%#= link_to 'Search', 'http://www.google.co.jp/', target: '_blank' %>
+    -->
+    <!-- mail_to のテスト
+    <%#= mail_to 'test@gmail.com', '連絡先', subject: 'traveling abroad' %>
+    -->
+    
+    <!-- mail_to のテスト２
+    <section id="top_contact" class="block-center">
+      <h3 class="site-title abel uppercase text-center">Contact</h3>
+      <ul class="list-unstyled text-center">
+        <li>
+          <a href="mailto:test@gmail.com"><i aria-label="メール" class="fa fa-envelope-o"></i></a>
+        </li>
+        <li>
+          <%#= mail_to 'test@gmail.com', ' Contact', subject: 'traveling abroad', class: 'fa fa-envelope-o' %>
+        </li>
+      </ul>
+    </section>
+    -->
+    
+    
+  <% end %>
+</div>
