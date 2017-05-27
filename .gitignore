@@ -17,7 +17,9 @@
 .byebug_history
 
 
-/public/cache
-/public/stylesheets/compiled
-/public/system/*
-/public/uploads
+#/public/cache
+#public/stylesheets/compiled
+#/public/system/*
+#/public/uploads
+
+/public/images
