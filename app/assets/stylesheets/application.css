@@ -90,6 +90,12 @@ footer{
 } 
 
 
+/* signup-logi form */
+.signup-login{
+  padding: 15px;
+}
+
+
 /* toppages */
 
 .cover{
@@ -354,8 +360,13 @@ footer{
   float: left;
 }
 
-
+/*
 .panel-heading{
+  padding: 15px;
+}
+*/
+
+.rank-photo{
   padding: 0px;
 }
 
