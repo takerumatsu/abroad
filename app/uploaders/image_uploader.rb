@@ -60,11 +60,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   process :fix_rotate
  
   def fix_rotate
-    manipulate! do |img|
-      img = img.auto_orient
-      img = yield(img) if block_given?
-      img
-    end
+#    manipulate! do |img|
+#      img = img.auto_orient
+#      img = yield(img) if block_given?
+#      img
+#    end
   end
 
 end
