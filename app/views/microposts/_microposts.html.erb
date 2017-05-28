@@ -22,8 +22,7 @@
           <% if micropost.image %>
 
             <a class="popup" href="<%= micropost.image %>"><%= image_tag(micropost.image, class: "micropost-image ") %></a>
-            <!--(不要箇所) classの位置に注意。image_tagの外にある<div class="">にclassを付けても意味ない -->            
-            <!--<div class="micropost-image"><%#= image_tag micropost.image %></div>-->
+            <%# !-- 不要箇所 classの位置に注意。image_tagの外にある<div class="">にclassを付けても意味ない --%>            
             
             <div class="text-center">
               <p><%= micropost.content %></p>
@@ -36,7 +35,7 @@
           <% if current_user == micropost.user %>
             <%= link_to "Delete", micropost, method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-delete' %>
           <% end %>
-          <!-- favoriteボタン追加 -->
+          <%# !-- favoriteボタン追加 --%>
           <% unless current_user == micropost.user %>
             <% if logged_in? %>
               <%= render 'favorites/favorites', micropost: micropost %>
@@ -46,7 +45,7 @@
       </div>
     </li>
   </ul>
-  </div> <!--- col-md-3 -->
+  </div> <%#!--- col-md-3 --%>
 <% end %>
 </div>
 
